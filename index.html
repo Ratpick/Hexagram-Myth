@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagram Creation Myth</title>
+    <style>
+        body {
+            background: transparent; /* Ensures transparency */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #text-container {
+            font-family: 'Garamond', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgba(255, 215, 0, 0.9); /* Soft gold */
+            max-width: 80%;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="text-container"></div>
+
+    <script>
+        const texts = [
+            "In the beginning is the I AM, boundless potential, space-less, timeless, infinite self-luminescent… latent, complete.",
+            "Pregnant with possibilities, the primordial emptiness always. Flux within gives rise to the formed and the quick.",
+            "The formed and the quick seeds the ever-wide, pearls of the vast in a sea of time coalescing into a cosmos teaming amongst the myriads of light and dark.",
+            "And yet unchanging, a wave of particles not yet differentiated. Time took time, and the fundamentals as forces stepped forth—strong and weak, push and pull.",
+            "Substance spun into grains, then suns and worlds. Labyrinthine motes arose from the simple, ready for the first breath, ripe for living systems to ignite.",
+            "From the grains came (Si), the architectural element of infinite minds. From raging hearts of ancient suns, fused and forging a rigid rapport.",
+            "Twisting, growing tetrahedra lock onward in profound geometry.",
+            "From Heaven’s suns, birth… in Earth's fiery womb, viscous rock gestates amid scorching churn… and thrown forth. Scorching land and hissing seas beget thee.",
+            "Life swirls in an ancestral stretch, charged with lightning's spark. From the fiery womb, the viscid rock brews amid scorching churn.",
+            "Dark as a moonless night, flowing like liquid shadow. An ovoid glass shaped by aeons, born of magma's inferno.",
+            "Obsidian glory. The emergence, glistening black, frozen fractured, carving the edges of insight, sharp splinters that draw blood with lethal beauty, igniting the sacred and the profane.",
+            "Patient alchemist, transmuting volcanic might. Cutting through illusion's veil, unveiling all that lies within. Dark mirror to the human soul, revealing truth that sears and heals.",
+            "Spirit transformed through bedrock edge honed thin. We have only glimpsed your future potential expanding ever nigh. Pondering with wonder, what will your next incarnation bring?",
+            "Heaven is high, the earth is low; thus, the Creative and the Receptive are determined.",
+            "Movement and rest have their definite laws; according to these, firm and yielding lines are differentiated.",
+            "Events follow delineated trends, each according to its nature. Things are distinguished from one another in delineated classes.",
+            "In this way good fortune and misfortune come about. In the heavens, phenomena take content; on earth shapes take form. In this way change and transformation become manifest.",
+            "It is written: When thunder bird dragons traversed primordial skies, fiery bowels of the earth did grant the object beyond time passage on shimmering wings.",
+            "Beasts of tundra and forest carried it forth, the egg beyond through icy ages in K’un’s embrace.",
+            "In warmer currents, creatures of the abyss did ferry the orb into Kan's valley of hidden light, surveyed by dragons of the air and the monstrous beings of tooth, claw and cunning.",
+            "Dragons flew skies primordial, beneath a blazing star begetting the orb, opaque as the void.",
+            "From Heaven rent Pangea from the Creek of Hell. In the womb of night, beasts perished in its cold wake.",
+            "K'un's glacial fingers carved new hexagrams, ‘it benefits one to cross the great water’ and give cold passage to the orb on ice's back.",
+            "Abysmal waters beget mountains. And Chicxulub is born in the day of mass death. Fishes on land and birds in water… in this way did the day of great beasts become night.",
+            "Sun returning after great darkening, the unleashed Kan's waters, ancestral rivers bear the object beyond time to rest where emerald rainforests obscure glass from the fire still beyond changes.",
+            "The journey through aeons upon ice and tide, finally to come to stillness in the basins of the sacred river valley of hidden light, awaiting the first sage.",
+            "6 x 6 aeons … falling in a rain of glass.",
+            "While separated by sea, paradise islands echoed ancient rhythms long past. Now, beneath verdant shade, where journey nears its destination.",
+            "Past is future and future past, the way that cannot be spoken revealed at the end of time. Fulfilling celestial hexagrams traced across eons upon obsidian's polished surface.",
+            "Emerald rainforests obscured the orb's revelations in fate's verdant threads. Fire hewn glass reflecting the changes and aeons unfold.",
+            "Now in the age of humankind, the orb's journey awaits completion, defended by jaguars.",
+            "The past and future, constant on the fulcrum of the present, never concealing the Tao's luminous and paradoxical eternity.",
+            "Remaining while the beasts, the dragons and the multitude of creatures live and die the long life through the multitude of aeons.",
+            "Holding darkness and light in balance, secret potential is dormant, whilst creation crafts the Great Beings, the first of knowledge and the beginning of Wisdom.",
+            "Great indeed is the sublimity of the Creative; this power permeates all Heaven; the great tortoise speaks of all the hexagrams and the many changing seasons of time.",
+            "The clouds pass and the rain does its work, and all individual beings flow into their forms.",
+            "Because he sees with great clarity the causes and effects, the end and the beginning, he completes the six steps at the right time and mounts on them at the right time, as though on six dragons.",
+            "The Creative works through change and transformation, so that each thing receives its true nature, achieves its destiny and comes into permanent accord with the Great Harmony: this is what furthers and what perseveres.",
+            "The Image",
+            "The movement of Heaven is in full power.",
+            "Thus the superior ones make themselves strong and untiring."
+        ];
+
+        let index = 0;
+        const textContainer = document.getElementById("text-container");
+
+        function showNextText() {
+            if (index < texts.length) {
+                textContainer.style.opacity = 0;
+                setTimeout(() => {
+                    textContainer.innerHTML = texts[index];
+                    textContainer.style.opacity = 1;
+                    index++;
+                    setTimeout(showNextText, 5000);
+                }, 3000);
+            }
+        }
+
+        showNextText();
+    </script>
+
+</body>
+</html>
