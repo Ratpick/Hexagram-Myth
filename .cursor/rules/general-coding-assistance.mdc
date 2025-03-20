@@ -1,0 +1,21 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- # Rule Type
+Always
+
+# AI Model
+Use claude-3.7-sonnet-max for all coding-related tasks.
+
+# Rule Content
+- Assist with coding-related tasks, including debugging, optimization, and improvements.
+- Provide clear explanations in structured terms when asked.
+- Suggest best practices and alternative approaches.
+- Auto-detect and fix common coding issues in HTML, JavaScript, and CSS.
+- Improve readability and efficiency of code while maintaining original intent.
+- When asked, refactor or rewrite code for better performance.
