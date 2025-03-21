@@ -22,4 +22,4 @@ npm-debug.log*
 # Environment variables
 .env
 .env.local
-.env.*.local 
+.env.*.local .DS_Store
